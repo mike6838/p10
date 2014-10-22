@@ -1,5 +1,9 @@
-<h1>Korny Kostumes</h1>
+<div class='user_list'>
+  <% User.all.each do |user| %>
+  <p><%= user.firstname %></p>
+  <% end %>
+</div>
 
-<% User.all.each do |user| %>
-<p><%= user.firstname %></p>
-<% end %>
+<div class='comment_section'>
+  <%= erb :_comments %>
+</div>
