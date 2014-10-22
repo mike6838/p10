@@ -1,0 +1,9 @@
+<div class='user_list'>
+  <% User.all.each do |user| %>
+  <p><%= user.firstname %></p>
+  <% end %>
+</div>
+
+<div class='comment_section'>
+  <%= erb :_comments %>
+</div>
