@@ -14,6 +14,9 @@ gem 'activerecord', '~>4.1'
 gem 'rake'
 gem 'bcrypt-ruby'
 gem 'shotgun'
+gem 'dm-validations'
+gem 'will_paginate', '~> 3.0'
+# gem 'bootstrap-will paginate', '0.0.6'
 
 group :test do
   gem 'shoulda-matchers'
