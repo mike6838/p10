@@ -1,17 +1,18 @@
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>Content</th>
-      <th>Created At</th>
-      <th>UserID</th>
-    </tr>
-    <% Comment.all.each do |comment| %>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Content</th>
+    <th>Created At</th>
+    <th>UserID</th>
+  </tr>
 
-    <tr>
-      <td><%= comment.id %></td>
-      <td><%= comment.content %></td>
-      <td><%= comment.created_at %></td>
-      <td><%= comment.user_id %></td>
-    </tr>
-  </table>
+  <% Comment.all.each do |comment| %>
+  <tr>
+    <td><%= comment.id %></td>
+    <td><%= comment.content %></td>
+    <td><%= comment.created_at %></td>
+    <td><%= comment.user_id %></td>
+  </tr>
 <% end %>
+
+</table>

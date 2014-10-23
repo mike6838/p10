@@ -7,7 +7,9 @@ require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 
 # Require gems we care about
 require 'rubygems'
-
+# require 'dm-validations'
+require 'will_paginate'
+require 'will_paginate/active_record'
 require 'uri'
 require 'pathname'
 require 'bcrypt'
@@ -17,6 +19,7 @@ require 'logger'
 require 'faker'
 require 'sinatra'
 require "sinatra/reloader" if development?
+
 
 require 'erb'
 
