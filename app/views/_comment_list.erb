@@ -1,13 +1,8 @@
 <table>
-  <tr>
-    <th>ID</th>
-    <th>Content</th>
-    <th>Created At</th>
-    <th>UserID</th>
-  </tr>
   <% if current_user %>
     <%= erb :_comment_form %>
   <% end %>
+
   <% Comment.all.reverse_each do |comment| %>
   <tr>
     <td><%= comment.content %></td>
