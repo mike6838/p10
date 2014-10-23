@@ -45,3 +45,9 @@ post '/users' do
     redirect '/users/new'
   end
 end
+
+# Post Comment
+post '/comment' do
+  Comment.create(params)
+  redirect '/'
+end
