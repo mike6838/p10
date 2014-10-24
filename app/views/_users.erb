@@ -1,9 +1,12 @@
-<div class='user_list'>
+<section class='user_list'>
   <% User.all.sample(10).each do |user| %>
     <% hash = Digest::MD5.hexdigest(user.email.downcase) %>
-    <div class='user_single'>
-      <img src="http://www.gravatar.com/avatar/<%= "#{hash}" %>">
-      <p><%= user.firstname + ' ' + user.lastname %></p>
-    </div>
+      <div class='user_single'>
+        <img src="http://www.gravatar.com/avatar/<%= "#{hash}" %>">
+        <ul>
+          <li><p><%= user.firstname + ' ' + user.lastname %></p></li>
+        </ul>
+        <br>
+      </div>
   <% end %>
-</div>
+</section>

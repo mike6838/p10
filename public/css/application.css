@@ -1,4 +1,16 @@
+body, html{
+  background-color: #ECC883;
+  font-family: 'Cabin', sans-serif;
 
+}
+
+h{
+  text-align: center;
+}
+p
+{
+    text-align: justify;
+}
 
 ul {
   margin: 0;
@@ -17,17 +29,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  padding-bottom: 1%;
-  /*margin: 0px;*/
-  color: #E09584;
-}
 
-h3 {
-  text-align: center;
-  font-size: 3em;
-  /*margin: 10px;*/
-}
 
 form label {
   font-family: helvetica;
@@ -122,10 +124,11 @@ form label {
 
 header {
   width: 100%;
-  background-color: #F3B242;
+  background-color: #F2B459;
   height: 100px;
   margin-top: 0px;
   padding-top: 0px;
+  font-family: 'Raleway', sans-serif;
 }
 
 li {
@@ -134,28 +137,59 @@ li {
 
 .user_list {
   float: left;
+  height: 400px;
   margin: 1px;
-  display: inline-block;
-  width: 20%;
+/*  display: inline-block;
+*/  width: 20%;
   margin-left: 50px;
   margin-top: 20px;
 }
 
 .user_list img {
-  width: 25%;
-  height: 25%;
-}
-
-.user_list p {
-  display: inline-block;
-  padding-bottom: 10px;
+  width: 20%;
+  height: 20%;
+  float: left;
 }
 
 .user_single {
+  display: inline-block;
+
+}
+
+.user_single p {
+   text-align: left;
+   margin: 0;
+   padding: 0;
 }
 
 a {
   text-decoration: none;
 
+}
+
+
+.orange_strip{
+  background-color: #F39019;
+  height: 20px;
+  width: 100%;
+}
+
+section {
+  width: 85%;
+  background-color: #FFF;
+  margin: 20px auto;
+  border: 15px solid #FFC96B;
+  text-align: center;
+  -moz-box-shadow: 0 0 7px #000;
+  -webkit-box-shadow: 0 0 7px #000;
+  box-shadow: 0 0 7px #606060;
+  overflow: auto;
+}
+
+.column{
+  float: left;
+  width: 31%;
+  margin: 1%;
+  padding: 0;
 }
 
