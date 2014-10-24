@@ -4,7 +4,7 @@
       <form action='/sessions/<%= current_user.id %>' method='post'>
           <input name='_method' type='hidden' value='delete' />
          <!--  <a href="/sessions/<%= params[:id] %>">Sign Out</a> -->
-          <input type='submit' value='Sign Out'>
+          <input id='remove_background' type='submit' value='Sign Out'>
       </form>
     </li>
   </ul>
