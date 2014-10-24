@@ -19,6 +19,7 @@ require 'logger'
 require 'faker'
 require 'sinatra'
 require "sinatra/reloader" if development?
+require 'digest/md5'
 
 
 require 'erb'
