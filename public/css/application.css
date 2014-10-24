@@ -154,6 +154,7 @@ form label {
 #comment_username{
   font-weight: 700;
   font-size: 14px;
+  margin-left: 0px;
 }
 .timestamp{
   font-size: 10px;
@@ -276,6 +277,7 @@ section {
 
 #korn{
   width:70%;
+  margin-bottom: 20px;
 }
 
 .kostumes table tr p {
