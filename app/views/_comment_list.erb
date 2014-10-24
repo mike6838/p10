@@ -1,16 +1,34 @@
-<div class='comment_list'>
-  <table>
+<section class='comment_list'>
     <% if current_user %>
       <%= erb :_comment_form %>
     <% end %>
+    <table>
       <% Comment.all.reverse_each do |comment| %>
-      <div class='comment_single'>
-        <section>
-        <p><%= "#{comment.user.firstname} #{comment.user.lastname} commented" %></p>
-        <p id='content'><%= comment.content %></p>
-        <p><%= comment.time_difference %></p>
-        </section>
-      </div>
+      <% hash = Digest::MD5.hexdigest(comment.user.email.downcase) %>
+        <tr>
+          <td>
+            <img src="http://www.gravatar.com/avatar/<%= "#{hash}" %>">
+          </td>
+
+          <td>
+            <p id="comment_username"><b><%= "#{comment.user.firstname} #{comment.user.lastname}" %></b><span class="timestamp"><%= comment.time_difference %></span></p>
+            <p id='content'><%= comment.content %></p>
+          </td>
+
+
+        </tr>
+
+        <tr>
+          <td>
+            <hr>
+          </td>
+          <td>
+            <hr>
+          </td>
+        </tr>
       <% end %>
-  </table>
-</div>
+    </table>
+</section>
+
+
+

@@ -1,12 +1,11 @@
 body, html{
   background-color: #ECC883;
-  font-family: 'Cabin', sans-serif;
-
+  /*font-family: 'Cabin', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
 }
 
-h{
-  text-align: center;
-}
 p
 {
     text-align: justify;
@@ -78,6 +77,7 @@ input[type=submit] {
   border-radius: 5px;
 }
 
+
 .description {
   display: inline-block;
 }
@@ -98,20 +98,25 @@ form label {
 }
 
 .comment_list {
-  float: left;
-  width: 60%;
+  float: right;
+  /*width: 60%;*/
+  overflow: visible;
 }
 
 .comment_single {
-  width:1000px;
-  border:1px solid #000;
-  padding-left: 100px;
-  width: 100%;
-  margin: 20px;
+  /*width:100%;*/
+  padding-left: 0px;
+  /*width: 100%;*/
+  /*margin: 10px;*/
+  text-align: left;
+}
+
+.comment_single > *{
+  vertical-align: middle;
 }
 
 #content {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .comment_single p {
@@ -120,76 +125,142 @@ form label {
   padding: 10px
 }
 
+#comment_username{
+  font-weight: 700;
+  font-size: 14px;
+}
+.timestamp{
+  font-size: 10px;
+  color: gray;
+  margin-left: 15px;
+}
+
 header {
   width: 100%;
   background-color: #F2B459;
   height: 100px;
   margin-top: 0px;
   padding-top: 0px;
-  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Indie Flower', cursive;
+}
+
+
+#subtitle{
+  font-size: 18px;
+  margin-left: 10%;
+  font-weight: 400;
+}
+
+
+.inline-block{
+  display: inline;
+}
+
+.titles{
+  width: 85%;
+  text-align: left;
+  margin-left: 12%;
+}
+
+.titles > *
+{
+  text-align: left;
+  padding-top: 45px;
 }
 
 li {
   margin-top: 0px;
 }
 
-.user_list {
-  float: left;
-  height: 400px;
-  margin: 1px;
-/*  display: inline-block;
-*/  width: 20%;
-  margin-left: 50px;
-  margin-top: 20px;
-}
-
-.user_list img {
-  width: 20%;
-  height: 20%;
-  float: left;
-}
-
-/*.user_single {
+.user_single p{
   display: inline-block;
-}*/
 
-/*.user_single p {
-   text-align: left;
-   margin: 0;
-   padding: 0;
-}*/
+}
+
+.user_single{
+  text-align: left;
+  margin: 5px;
+}
+
+.user_single > *
+{
+  vertical-align: middle;
+}
+
+.user_list {
+  width: 20%;
+  float: left;
+}
+
 
 a {
   text-decoration: none;
 
 }
 
-<<<<<<< HEAD
+h2{
+    font-weight: 300;
+
+}
 
 .orange_strip{
   background-color: #F39019;
   height: 20px;
   width: 100%;
+  -webkit-box-shadow: 0 8px 6px -6px #606060;
+   -moz-box-shadow: 0 8px 6px -6px #606060;
+        box-shadow: 0 8px 6px -6px #606060;
 }
 
 section {
-  width: 85%;
+  /*width: 85%;*/
   background-color: #FFF;
   margin: 20px auto;
   border: 15px solid #FFC96B;
   text-align: center;
-  -moz-box-shadow: 0 0 7px #000;
-  -webkit-box-shadow: 0 0 7px #000;
+  -moz-box-shadow: 0 0 7px #606060;
+  -webkit-box-shadow: 0 0 7px #606060;
   box-shadow: 0 0 7px #606060;
   overflow: auto;
 }
+
+#about_project{
+  width: 85%;
+}
+
+#korn{
+  width:70%;
+}
+
+.kostumes table tr p {
+  text-align: center;
+  /*font-weight: 400;*/
+  font-size: 18px;
+}
+
+.kostumes{
+  /*display: inline-block;*/
+  margin: 0 auto;
+  width: 85%;
+}
+
+#kandy_korn{ width: 180px; margin-left: 15px;}
+#korn_on_the_kob {width: 200px;}
+#korn_dog_1 { width: 250px;}
+#unikorn{ width: 150px;}
+#korn_dog_2{ width: 150px;}
 
 .column{
   float: left;
   width: 31%;
   margin: 1%;
   padding: 0;
-=======
+
+
+
+
+
 /************JS**************/
 
 
@@ -285,6 +356,8 @@ section {
 
 #ltr:hover {
   background:url(/img/ltr_over.png) no-repeat;
->>>>>>> f7206ca5dc2228f72b4a101cb99a157028471874
+
 }
+
+
 

@@ -8,7 +8,10 @@
     See: http://necolas.github.com/normalize.css/
   -->
   <link rel="stylesheet" href="/css/normalize.css">
-  <link href='http://fonts.googleapis.com/css?family=Cabin|Raleway' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400|Indie+Flower' rel='stylesheet' type='text/css'>
+
   <!--
     application.css is where you put your styles
   -->
@@ -29,8 +32,11 @@
     <% else %>
       <%= erb :_header_logged_out %>
     <% end %>
-    <h1>Korny Kostumes</h1>
-    <p>A Brown-Bat-to-Brown-Brown-Bat Halloween Announcement</p>
+    <div class="titles">
+      <h1 id="kornykostumes">Korny Kostumes <span id="subtitle">A Brown-Bat-to-Brown-Brown-Bat Halloween Announcement</span></h1>
+    <!--   <p id="subtitle">A Brown-Bat-to-Brown-Brown-Bat Halloween Announcement</p> -->
+    </div>
+
 
 </header>
 <div class="orange_strip">
