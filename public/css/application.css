@@ -237,8 +237,10 @@ a {
 
 h2{
     font-weight: 300;
+  margin-bottom:15px;
 
 }
+
 
 #intro_header{
   text-align: left;
@@ -265,6 +267,9 @@ section {
   overflow: auto;
 }
 
+.comment_list table tr td *{
+  margin: 15px;
+}
 #about_project{
   width: 85%;
 }
@@ -312,6 +317,9 @@ section {
 }
 
 
+hr{
+  margin: 0;
+}
 
 
 
