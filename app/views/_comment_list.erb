@@ -1,10 +1,20 @@
 <section class='comment_list'>
+    <h2>Comments</h2>
     <% if current_user %>
       <%= erb :_comment_form %>
     <% end %>
     <table>
       <% Comment.all.reverse_each do |comment| %>
       <% hash = Digest::MD5.hexdigest(comment.user.email.downcase) %>
+          <tr>
+          <td>
+            <hr>
+          </td>
+          <td>
+            <hr>
+          </td>
+        </tr>
+
         <tr>
           <td>
             <img src="http://www.gravatar.com/avatar/<%= "#{hash}" %>">
@@ -18,14 +28,7 @@
 
         </tr>
 
-        <tr>
-          <td>
-            <hr>
-          </td>
-          <td>
-            <hr>
-          </td>
-        </tr>
+
       <% end %>
     </table>
 </section>
