@@ -1,9 +1,19 @@
 
 
+ul {
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 10px;
+  float: right;
+}
+
 h1 {
   margin: 0px;
-  /*padding-top: 2%;*/
-  color: #E09584;
+  padding-top: 2%;
   text-align: center;
 }
 
@@ -66,6 +76,10 @@ input[type=submit] {
   border-radius: 5px;
 }
 
+.description {
+  display: inline-block;
+}
+
 .form-box {
   float: right;
 }
@@ -81,9 +95,29 @@ form label {
   display: inline;
 }
 
-.comment-box {
-
+.comment_list {
+  float: left;
+  width: 60%;
 }
+
+.comment_single {
+  width:400px;
+  border:1px solid #000;
+  padding-left: 100px;
+  width: 100%;
+  margin: 20px;
+}
+
+#content {
+  font-size: 20px;
+}
+
+.comment_single p {
+  display: inline-block;
+  font-size: 12px;
+  padding: 10px
+}
+
 
 
 header {
@@ -98,7 +132,37 @@ li {
   margin-top: 0px;
 }
 
+<<<<<<< HEAD
 ul{
   margin: 0;
   padding: 0;
 }
+=======
+.user_list {
+  float: left;
+  margin: 1px;
+  display: inline-block;
+  width: 20%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.user_list img {
+  width: 25%;
+  height: 25%;
+}
+
+.user_list p {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.user_single {
+}
+
+a {
+  text-decoration: none;
+
+}
+
+>>>>>>> 25750e3829ae44198879cf216db6cfae5443f051

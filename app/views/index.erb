@@ -1,9 +1,9 @@
-<div class='user_list'>
-  <% User.all.each do |user| %>
-  <p><%= user.firstname %></p>
-  <% end %>
-</div>
 
+<%= erb :_users %>
+<div class='description'>
+  <img src="/img/cat.png">
+  <p>korn stuff</p>
+</div>
 <%= erb :_paypal_button %>
 <div class='comment_section'>
   <%= erb :_comment_list %>
