@@ -1,3 +1,5 @@
+
+
 ul {
   margin: 0;
 }
@@ -17,14 +19,14 @@ h1 {
 
 h2 {
   padding-bottom: 1%;
-  margin: 0px;
+  /*margin: 0px;*/
   color: #E09584;
 }
 
 h3 {
   text-align: center;
   font-size: 3em;
-  margin: 10px;
+  /*margin: 10px;*/
 }
 
 form label {
@@ -130,6 +132,12 @@ li {
   margin-top: 0px;
 }
 
+<<<<<<< HEAD
+ul{
+  margin: 0;
+  padding: 0;
+}
+=======
 .user_list {
   float: left;
   margin: 1px;
@@ -157,3 +165,4 @@ a {
 
 }
 
+>>>>>>> 25750e3829ae44198879cf216db6cfae5443f051
